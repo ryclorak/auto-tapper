@@ -41,7 +41,7 @@ void loop()
   
   if (mode==0) //manual control
   {
-    if (xValue > 550)
+    if (xValue > 550) //pretty much a magic number from observation, will change with case design
     {
       Serial.print(" xValue>550\n");
       srv.write(pos+=5);
